@@ -22,7 +22,7 @@ public class Bank {
     public static int option;
     public String accountName;
     
-    void setPin(){
+    void setPin(){ //good practice
       
         Scanner scan = new Scanner(System.in);
         System.out.println("Welcome to your account");
@@ -147,9 +147,9 @@ public class Bank {
                   System.out.println("A charge of 0.10 for each transaction");
                   
                   break;
-              case 4:
+              case 4: 
                   
-                  cDAccount.setPin();
+                  cDAccount.setPin(); //nice 
                   cDAccount.showBalance();
                   cDAccount.calculateCharge();
                   cDAccount.calculateInterest();
